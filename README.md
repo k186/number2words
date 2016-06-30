@@ -15,7 +15,6 @@
         numTag:'span',//可为空
         unitTag:'div'//可为空
     };
-
 num2word(number,option);调用方法名 及参数
 ```
 
