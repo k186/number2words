@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="js/number2words.js"></script>
+</head>
+<body>
+<input id="inputs" type="text"/>
+<div id="output"></div>
+<button id="btn">转换</button>
+</body>
+<script>
+    var btn= document.getElementById('btn');
+    var output=document.getElementById('output');
+    var inputs=document.getElementById('inputs');
+    btn.addEventListener('click',function () {
+        var value=inputs.value;
+        output.innerHTML= num2word(value);
+    });
+</script>
+</html>
