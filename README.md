@@ -18,14 +18,16 @@
         numTag:'span',//可为空
         unitTag:'div'//可为空
     };
-num2word(number,option);调用方法名 及参数
+*.innerHTML= num2word(number,option);调用方法名 及参数
 ```
 
-下次优化 传入参数增加输出标签ID
+传入参数增加输出标签ID
 ```
 现有输出是字符串如果在某些情况下会转义html标签，这是我们不想看到的
 ····
 option={
+    ....
     outputID:""
 }
+num2word(number,option);调用方法名 及参数
 ```
