@@ -39,7 +39,7 @@
 </div>
 <div class="foot">
     <div class="input-box off">
-        <input id="inputs" type="number" value="8548"/>
+        <input id="inputs" type="text" value="8548"/>
     </div>
 </div>
 </body>
@@ -51,15 +51,18 @@
     var inputs=document.getElementById('inputs');
     var value=inputs.value;
     var option1={
-        isTag:false
+        isTag:false,
+        container:"output1"
     };
     var option2={
         isTag:true,
-        numTag:'span'
+        numTag:'span',
+        container:"output2"
     };
     var option3={
         isTag:true,
-        unitTag:'div'
+        unitTag:'div',
+        container:"output3"
     };
     var option4={
         isTag:true,
@@ -68,14 +71,14 @@
     };
     inputs.addEventListener('keyup',function () {
         var value=inputs.value;
-        output1.innerHTML= num2word(value,option1);
-        output2.innerHTML= num2word(value,option2);
-        output3.innerHTML= num2word(value,option3);
-        output4.innerHTML= num2word(value,option4);
+         num2word(value,option1);
+         num2word(value,option2);
+         num2word(value,option3);
+         output4.innerHTML=num2word(value,option4);
     });
-    output1.innerHTML= num2word(value,option1);
-    output2.innerHTML= num2word(value,option2);
-    output3.innerHTML= num2word(value,option3);
+    num2word(value,option1);
+    num2word(value,option2);
+    num2word(value,option3);
     output4.innerHTML= num2word(value,option4);
 </script>
 </html>
