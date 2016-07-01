@@ -1,0 +1,32 @@
+{
+  "name": "number2chinese",
+  "version": "0.0.1",
+  "description": "cover number to chinese number",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-rename": "^1.2.2",
+    "gulp-rev": "^7.1.0",
+    "gulp-uglify": "^1.5.4",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/k186/number2words.git"
+  },
+  "keywords": [
+    "number",
+    "javascript"
+  ],
+  "author": "k186",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/k186/number2words/issues"
+  },
+  "homepage": "https://github.com/k186/number2words#readme"
+}
