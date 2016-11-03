@@ -51,34 +51,32 @@
     var inputs=document.getElementById('inputs');
     var value=inputs.value;
     var option1={
-        isTag:false,
-        container:"output1"
+        isTag:false
     };
     var option2={
         isTag:true,
-        numTag:'span',
-        container:"output2"
+        numTag:'span'
     };
     var option3={
         isTag:true,
-        unitTag:'div',
-        container:"output3"
+        unitTag:'div'
     };
     var option4={
         isTag:true,
         numTag:'span',
         unitTag:'div'
     };
+    var value=inputs.value;
     inputs.addEventListener('keyup',function () {
-        var value=inputs.value;
-         num2word(value,option1);
-         num2word(value,option2);
-         num2word(value,option3);
-         output4.innerHTML=num2word(value,option4);
+        value=inputs.value;
+        Number2Wrods.config(option1).putStr(value,'output1');
+        Number2Wrods.config(option2).putStr(value,'output2');
+        Number2Wrods.config(option3).putStr(value,'output3');
+        output4.innerHTML= Number2Wrods.config(option4).putStr(value)
     });
-    num2word(value,option1);
-    num2word(value,option2);
-    num2word(value,option3);
-    output4.innerHTML= num2word(value,option4);
+    Number2Wrods.config(option1).putStr(value,'output1');
+    Number2Wrods.config(option2).putStr(value,'output2');
+    Number2Wrods.config(option3).putStr(value,'output3');
+    output4.innerHTML= Number2Wrods.config(option4).putStr(value)
 </script>
 </html>
